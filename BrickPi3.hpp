@@ -42,11 +42,6 @@
 #define ERROR_FIRMWARE_MISMATCH    -5
 #define ERROR_SENSOR_TYPE_MISMATCH -6
 
-int spi_file_handle = -1;                    // SPI file handle
-struct spi_ioc_transfer spi_xfer_struct;     // SPI transfer struct
-uint8_t spi_array_out[LONGEST_SPI_TRANSFER]; // SPI out array
-uint8_t spi_array_in[LONGEST_SPI_TRANSFER];  // SPI in array
-
 // Set up SPI. Open the file, and define the configuration.
 int spi_setup();
 
